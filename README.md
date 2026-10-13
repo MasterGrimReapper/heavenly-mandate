@@ -6,18 +6,27 @@
 Lead an immortal and their summoned troops, push down the lanes, take the river bosses and shatter the enemy Heart of Heaven.</p>
 
 <p align="center">
-  <a href="https://github.com/MasterGrimReapper/heavenly-mandate/raw/main/updates/HeavenlyMandate.apk"><b>⬇ Download for Android (APK)</b></a> ·
-  <a href="updates/">Latest build</a> ·
+  <a href="https://github.com/MasterGrimReapper/heavenly-mandate/raw/main/android/HeavenlyMandate-Android.apk"><b>⬇ Android app (APK)</b></a> ·
+  <a href="windows/README.md">Windows desktop</a> ·
   <a href="CHANGELOG.md">Changelog</a>
 </p>
 
 <p align="center">
   <img alt="Latest version" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FMasterGrimReapper%2Fheavenly-mandate%2Fmain%2Fupdates%2Fupdate.json&query=%24.versionName&prefix=v&label=latest&color=d9b25f">
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Android%20%7C%20Windows%20%7C%20Web-4fd1a1">
+  <img alt="Platform" src="https://img.shields.io/badge/platform-Android%20%C2%B7%20Windows%20soon-4fd1a1">
   <img alt="Status" src="https://img.shields.io/badge/status-early%20access-ef5a45">
 </p>
 
 ---
+
+## Downloads
+
+| Platform | File | Status |
+|---|---|---|
+| **Android** (phones and tablets) | [`android/HeavenlyMandate-Android.apk`](android/HeavenlyMandate-Android.apk) | Available, updates itself from inside the game |
+| **Windows** (desktop) | See [`windows/`](windows/README.md) | In development, Steam release planned |
+
+The `.apk` file is **Android only**: it will not run on a Windows PC. The `updates/` folder is read automatically by the Android app; you never need to download anything from it.
 
 ## About the game
 
@@ -108,7 +117,7 @@ The Android app is the full game with touch controls built for phones:
 
 ### Install
 
-1. Download **[HeavenlyMandate.apk](https://github.com/MasterGrimReapper/heavenly-mandate/raw/main/updates/HeavenlyMandate.apk)** on your phone.
+1. Download **[HeavenlyMandate-Android.apk](https://github.com/MasterGrimReapper/heavenly-mandate/raw/main/android/HeavenlyMandate-Android.apk)** on your phone.
 2. Open it from your Downloads. The first time, Android asks you to allow installing apps from that source: allow it, go back and tap **Install**.
 3. Needs Android 7.0 or newer and a phone with WebGL (any phone from the last several years).
 
