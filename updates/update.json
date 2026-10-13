@@ -1,0 +1,12 @@
+{
+ "versionCode": 48,
+ "versionName": "0.4.8",
+ "title": "The game has a home on GitHub",
+ "notes": [
+  "Heavenly Mandate now has a public page with the game's description, heroes, modes, screenshots and changelog",
+  "The Android app now downloads updates from that page; from this version on, new versions are offered in the game automatically"
+ ],
+ "apk": "HeavenlyMandate.apk",
+ "size": 5629782,
+ "sha256": "e5ba013046168e036c9f994ea49656edf89b456d77f47b6a0bd6e4295dcc2a2a"
+}
