@@ -80,12 +80,12 @@ Every hero has a legend to read in the gallery, difficulty and play-style rating
 
 | Mode | Players | Length | What it is |
 |---|---|---|---|
-| **Three Realms** | 5 v 5 | 18–28 min | The full war: three lanes, a jungle of monsters, river bosses and the Kunpeng. Destroy the enemy Heart of Heaven. |
-| **Celestial Rush** | 5 v 5 | 10–15 min | The full map at double speed: start at level 4 with 2,000 gold, faster waves, weaker towers and quick respawns. |
-| **Bridge of Immortals** | 5 v 5 | 7–14 min | One long bridge over a sea of clouds, base to base. Level 3 start, no recalling, overtime at 9:00. |
-| **King of the River** | 5 v 5 | 5–9 min | A round arena with a control point at its centre. The team with more heroes on the point scores; first to 300 wins. |
-| **Duel of Immortals** | 1 v 1 | 5–10 min | One hero each on the cloud bridge. Win with 3 takedowns, the first pagoda or the Heart. |
-| **All Random** | 5 v 5 | 15–25 min | Three Realms with every hero chosen at random (one reroll each). |
+| **Three Realms** | 5 v 5 | 12–21 min | The full war: three lanes, a jungle of monsters, river bosses and the Kunpeng. Destroy the enemy Heart of Heaven. |
+| **Celestial Rush** | 5 v 5 | 8–15 min | The full map at double speed: start at level 4 with 2,000 gold, faster waves, weaker towers and quick respawns. |
+| **Bridge of Immortals** | 5 v 5 | 6–15 min | One long bridge over a sea of clouds, base to base. Level 3 start, no recalling, overtime at 9:00. |
+| **King of the River** | 5 v 5 | 5–8 min | A round arena with a control point at its centre. The team with more heroes on the point scores; first to 300 wins. |
+| **Duel of Immortals** | 1 v 1 | 5–12 min | One hero each on the cloud bridge. Win with 3 takedowns, the first pagoda or the Heart. |
+| **All Random** | 5 v 5 | 12–20 min | Three Realms with every hero chosen at random (one reroll each). |
 | **Practice Grounds** | Solo | Free | You, the soldiers, the jungle and a training dummy. Instant levels, free gold, no cooldowns, infinite Qi and a DPS meter. |
 
 <p align="center"><img src="docs/mode-maps.jpg" alt="The cloud bridge (left) and the King of the River arena (right)" width="100%"></p>
@@ -154,7 +154,8 @@ Heavenly Mandate is in **early access** and updated often. See the [changelog](C
 
 - Android: available here, with in-app updates
 - Windows desktop: in development, with a Steam release planned
-- Next: more heroes, balance from match data, challenge modes
+- Balance is tuned from seeded bot-vs-bot match batches; every release runs automated replay and simulation tests
+- Next: more heroes, challenge modes, a custom match lab
 
 <p align="center"><img src="docs/menu.jpg" alt="Main menu" width="49%"> <img src="docs/modes.jpg" alt="Choosing a battlefield and mode" width="49%"></p>
 

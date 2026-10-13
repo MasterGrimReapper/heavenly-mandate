@@ -1,3 +1,28 @@
+# Heavenly Mandate — v0.049 changelog
+
+**The desktop review: tests, fairer bots, a clearer surrender and a sturdier desktop app.**
+
+1. Automated tests ship with the desktop package: `npm test` checks every script, the content (16 heroes, real items in every build, all 59 Steam achievements), replays in all five modes (same final state and same event sequence), and simulation invariants (health, gold, cooldowns, respawn limits, match endings)
+2. A seeded simulation batch runner and summary (`npm run sim`, `tests/summarize.js`) report match length percentiles, first blood and first tower, side balance, income by lane, bot play styles and hero win rates with 95% intervals. REVIEW.md now holds current results instead of v0.041/v0.042 data
+3. Bots respect pagoda range when chasing: allies and easier enemies no longer follow a fleeing hero under an untanked tower, and diving needs a nearly dead target, spare health and a teammate close by. Celestial and Mythic enemies still take calculated risks
+4. Laners hold their lane through the early game instead of drifting to distant bosses (objective-minded bots still go)
+5. Lane economy: soldiers pay 2 more gold, the laner assigned to a lane collects the shared gold from further away, a soldier lost to a pagoda pays nearby heroes a bigger share, and jungle camps pay less and respawn after 125 s instead of 100 s
+6. Surrender is now a visible vote: allies answer one by one, you can cancel it, it needs 4 of 5, and a failed or cancelled vote locks voting for a while. The first click's confirmation expires after 4 seconds. Surrenders are recorded, so replays end the same way
+7. The death recap always names the final blow, even when no damage was recorded
+8. Routine banners no longer stack up: a repeat within 25 seconds, or a small banner queued behind two others, goes to the kill feed
+9. While dead on desktop, arrow keys and edge panning look around and the Center key follows your ally again; on phones a Follow button appears in the death bar
+10. Desktop display modes: Fullscreen, Borderless and Windowed. The window remembers its size, position and monitor
+11. Menus and the HUD scale up on 1440p, 4K and ultrawide screens; the main menu and shop fit a 1024×640 window
+12. Settings are checked on load: a damaged settings file is set aside and defaults are used, wrong types and out-of-range values are repaired, and keys reserved for items, the scoreboard, fullscreen and the controls card can no longer be bound
+13. Achievements unlocked during a match now reach Steam (they only did at the end before)
+14. Steam readiness: `npm run release-check` lists what still blocks a public release (the test App ID 480, achievement icons, versions, Electron security), and 118 achievement icons (locked and unlocked, 256×256) are in build/achievements
+15. The post-match coach has a button to practise its suggestion: the last-hit drill, the training dummy, replays, Bridge Battle or Celestial Rush
+16. Mode cards show match lengths measured from simulated matches (Three Realms 12–21 min, Celestial Rush 8–15, Bridge 6–15, King of the River 5–8, Duel 5–12)
+17. Windows builds can be made as a portable zip from any computer (`npm run dist:zip`), with the game's icon and version on the .exe
+18. Replays from earlier versions are flagged as incompatible (simulation version 44)
+
+---
+
 # Heavenly Mandate — v0.048 changelog
 
 **The game has a home on GitHub.**

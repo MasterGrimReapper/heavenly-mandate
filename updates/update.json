@@ -1,12 +1,22 @@
 {
- "versionCode": 48,
- "versionName": "0.4.8",
- "title": "The game has a home on GitHub",
+ "versionCode": 49,
+ "versionName": "0.4.9",
+ "title": "The desktop review: tests, fairer bots, a clearer surrender and a sturdier desktop app",
  "notes": [
-  "Heavenly Mandate now has a public page with the game's description, heroes, modes, screenshots and changelog",
-  "The Android app now downloads updates from that page; from this version on, new versions are offered in the game automatically"
+  "Automated tests ship with the desktop package",
+  "A seeded simulation batch runner and summary (`npm run sim`, `tests/summarize.js`) report match length percentiles, first blood and first tower, side balance, i",
+  "Bots respect pagoda range when chasing",
+  "Laners hold their lane through the early game instead of drifting to distant bosses (objective-minded bots still go)",
+  "Lane economy",
+  "Surrender is now a visible vote",
+  "The death recap always names the final blow, even when no damage was recorded",
+  "Routine banners no longer stack up: a repeat within 25 seconds, or a small banner queued behind two others, goes to the kill feed",
+  "While dead on desktop, arrow keys and edge panning look around and the Center key follows your ally again",
+  "Desktop display modes: Fullscreen, Borderless and Windowed. The window remembers its size, position and monitor",
+  "Menus and the HUD scale up on 1440p, 4K and ultrawide screens; the main menu and shop fit a 1024×640 window",
+  "Settings are checked on load"
  ],
  "apk": "https://raw.githubusercontent.com/MasterGrimReapper/heavenly-mandate/main/android/HeavenlyMandate-Android.apk",
- "size": 5629782,
- "sha256": "e5ba013046168e036c9f994ea49656edf89b456d77f47b6a0bd6e4295dcc2a2a"
+ "size": 5642070,
+ "sha256": "a61a41e73d8060b9440dfed0ae59c3ae71a3669702b38241ed288d692e418ddf"
 }
