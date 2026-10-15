@@ -1,20 +1,11 @@
 {
- "versionCode": 53,
- "versionName": "0.5.3",
- "title": "A focused roster of 15, smoother online play, resting and potions, a lighter touch interface, and a new icon",
+ "versionCode": 54,
+ "versionName": "0.5.4",
+ "title": "Smooth movement online",
  "notes": [
-  "Roster",
-  "Online: the troop button works (the server used to drop the summon command)",
-  "Online",
-  "Resting",
-  "Potions redefined",
-  "Phones and tablets",
-  "Phones",
-  "A new app icon: a jade immortal and a crimson general clashing",
-  "Settings › Online › Delete my online account deletes your online account and its data at once",
-  "Older servers"
+  "Online, immortals steered with the thumb stick or a gamepad no longer move in stop-and-go steps"
  ],
  "apk": "https://raw.githubusercontent.com/MasterGrimReapper/heavenly-mandate/main/android/HeavenlyMandate-Android.apk",
  "size": 30828919,
- "sha256": "7afe5f15ad3d58289db6e62e24af756fcd3252d8e9878a212e30f4e3def109f7"
+ "sha256": "d6bfd419ec44d44b506806bae129a46c1f466da5b3bfd7997c2f8847ff752bbd"
 }

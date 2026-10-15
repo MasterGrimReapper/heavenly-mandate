@@ -1,3 +1,11 @@
+# Heavenly Mandate — v0.054 changelog
+
+**Smooth movement online.**
+
+1. Online, immortals steered with the thumb stick or a gamepad no longer move in stop-and-go steps. The stick now sends a direction the immortal keeps following (as the keyboard always did) instead of a point just ahead, which arrived after the input delay and made every immortal pause each turn. Measured: at a 300 ms input delay the old way stopped the immortal 8% of the time and cut its speed by 22%; the new way is as smooth as offline
+
+---
+
 # Heavenly Mandate — v0.053 changelog
 
 **A focused roster of 15, smoother online play, resting and potions, a lighter touch interface, and a new icon.**
