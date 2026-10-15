@@ -1,22 +1,20 @@
 {
- "versionCode": 49,
- "versionName": "0.4.9",
- "title": "The desktop review: tests, fairer bots, a clearer surrender and a sturdier desktop app",
+ "versionCode": 53,
+ "versionName": "0.5.3",
+ "title": "A focused roster of 15, smoother online play, resting and potions, a lighter touch interface, and a new icon",
  "notes": [
-  "Automated tests ship with the desktop package",
-  "A seeded simulation batch runner and summary (`npm run sim`, `tests/summarize.js`) report match length percentiles, first blood and first tower, side balance, i",
-  "Bots respect pagoda range when chasing",
-  "Laners hold their lane through the early game instead of drifting to distant bosses (objective-minded bots still go)",
-  "Lane economy",
-  "Surrender is now a visible vote",
-  "The death recap always names the final blow, even when no damage was recorded",
-  "Routine banners no longer stack up: a repeat within 25 seconds, or a small banner queued behind two others, goes to the kill feed",
-  "While dead on desktop, arrow keys and edge panning look around and the Center key follows your ally again",
-  "Desktop display modes: Fullscreen, Borderless and Windowed. The window remembers its size, position and monitor",
-  "Menus and the HUD scale up on 1440p, 4K and ultrawide screens; the main menu and shop fit a 1024×640 window",
-  "Settings are checked on load"
+  "Roster",
+  "Online: the troop button works (the server used to drop the summon command)",
+  "Online",
+  "Resting",
+  "Potions redefined",
+  "Phones and tablets",
+  "Phones",
+  "A new app icon: a jade immortal and a crimson general clashing",
+  "Settings › Online › Delete my online account deletes your online account and its data at once",
+  "Older servers"
  ],
  "apk": "https://raw.githubusercontent.com/MasterGrimReapper/heavenly-mandate/main/android/HeavenlyMandate-Android.apk",
- "size": 5642070,
- "sha256": "a61a41e73d8060b9440dfed0ae59c3ae71a3669702b38241ed288d692e418ddf"
+ "size": 30828919,
+ "sha256": "7afe5f15ad3d58289db6e62e24af756fcd3252d8e9878a212e30f4e3def109f7"
 }

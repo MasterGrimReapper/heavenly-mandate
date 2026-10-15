@@ -1,3 +1,76 @@
+# Heavenly Mandate — v0.053 changelog
+
+**A focused roster of 15, smoother online play, resting and potions, a lighter touch interface, and a new icon.**
+
+1. Roster: 15 immortals for now, chosen so every role has strong picks and both story campaigns keep their heroes: Sun Wukong, Erlang Shen, Guan Yu, Zhu Bajie, Ao Guang, the Bull Demon King, Nezha, Bai Gujing, Chang'e, Zhuge Liang, Bai Suzhen, Hou Yi, Hua Mulan, Mazu and Jiang Ziya. The others return in later updates
+2. Online: the troop button works (the server used to drop the summon command)
+3. Online: less lag. The input delay now follows the slowest player's connection instead of a fixed 200 ms, and adjusts during the match; abilities and attacks are sent the instant you press them; a press that arrives late is delayed, never lost; the game no longer jumps several turns at once after a late packet
+4. Resting: out of combat for 5 s, immortals slowly regain health (1%/s rising to 2%/s) and Qi (1.5%/s); troops too. Soldiers don't keep you in combat. The health bar shows "+ Resting"
+5. Potions redefined: one purchase with charges that refill free at the Gate of Life. Healing Elixir 150g, 3 charges, 180 health over 12 s. Spirit Wine 100g, 3 charges, 150 Qi over 10 s. New Jade Dew Elixir 500g, 2 charges, 260 health and 120 Qi. Elixir of Fury 300g, one drink, +15% power for 3 minutes. Drinking the same potion again refreshes it; 2 s between drinks; every potion has its own flask icon, and the shop shows charges and exact numbers
+6. Phones and tablets: a lighter battle screen that covers about 30% less of the screen: smaller minimap with the shop and recall under it, a one-line score bar, the top buttons in one pill, a slimmer hero bar and an evenly spaced ability arc. The desktop screen is unchanged
+7. Phones: the in-match shop fills the screen with a category rail, a scrolling item grid and a buy button that is always visible; the scoreboard, pause, end screen, talent picker, surrender vote and controls guide fit small phones
+8. A new app icon: a jade immortal and a crimson general clashing
+9. Settings › Online › Delete my online account deletes your online account and its data at once. Support: heavenlymandatesupport@gmail.com; privacy policy at heavenly-mandate-server.onrender.com/privacy
+10. Older servers: when the server needs a newer game, an Update button opens Google Play; when your game is newer than the server, it waits for the server update and lets you in on its own
+
+---
+
+# Heavenly Mandate — v0.052 changelog
+
+**Online play now connects to our own hosted server: no setup needed.**
+
+1. Online works out of the box: the game connects to the Heavenly Mandate server we host, so matchmaking finds real players anywhere, not just on the same Wi-Fi
+2. Settings › Online still lets a tester type another server address; clearing it goes back to our server
+3. The server is updated when each new version is live on Google Play, so the version on the store always matches it
+4. When the server needs a newer game, an Update button opens the game's Google Play page. When your game is newer than the server, it says the server update is on the way and lets you in on its own a few minutes later
+5. Settings › Online › Delete my online account: deletes your online account and its data on the spot (offline progress stays). The privacy policy now lives at heavenly-mandate-server.onrender.com/privacy, and support is at heavenlymandatesupport@gmail.com
+
+---
+
+# Heavenly Mandate — v0.051 changelog
+
+**Online multiplayer arrives (Android first), recorded voices, and a Google Play build.**
+
+1. Play now asks how you want to play: Online against real players, or Offline against bots. Offline needs no internet and has every mode from before
+2. Online: Ranked 5v5, Quick Match 5v5, Bridge of Immortals 5v5 and Duel 1v1, with matchmaking by skill, a match-found accept screen, a blind-pick draft and live teammate picks
+3. Ranked: Glicko-2 ratings, court ranks from Mortal to the Jade Emperor's Court with divisions, five placement matches, seasons and leaderboards. Ranked and Duel are real players only; casual queues fill empty seats with bots after a minute
+4. Fair online matches: every phone runs the same battle in lockstep, the server checks every result, a bot takes over for a player who leaves, and you can reconnect into your match
+5. Our own game server (in the server/ folder) runs on a PC for friends on the same Wi-Fi, or online on Render or Google Cloud Run. Set its address in Settings › Online
+6. No internet? The game notices and keeps Offline one tap away
+7. Recorded voices instead of the robotic system voice: a narrator for the opening, the campaigns and the Codex, five announcer packs, and a voice for every immortal, in English and Mandarin. Listen buttons on the Codex, legends and campaign panels
+8. The game now presents itself as an online MOBA with an offline mode. The bot ladder is now called the Bot ladder (Path of the Mandate)
+9. Android: targets Android 16 (API 36), handles the new back gesture, edge-to-edge screens and large-screen windows, and has a Google Play build (App Bundle) without the in-app updater
+10. Replays from earlier versions still play; online matches are recorded as replays too
+
+---
+
+# Heavenly Mandate — v0.050 changelog
+
+**The big one: ten new immortals, a ranked ladder against bots, Siege of Heaven, campaigns, Simplified Chinese and 300 more improvements from the MOBA research.**
+
+1. Ten new immortals: Ao Bing, Bai Gujing, Jiang Ziya, Nü Wa, the Bull Demon King, Princess Iron Fan, Yue Fei, Mu Guiying, King Yan and Xiaoqing. Each has a full kit, a troop, skins and bot support, and the Jade Emperor arrives as a raid boss
+2. Aspects: every immortal has a second play style, chosen on hero select. Troop talents at levels 6, 11 and 16 let you choose how your troop evolves
+3. Path of the Mandate: a ranked ladder against rated bots, with court ranks, stars, Fortitude, placements and lunar seasons
+4. Siege of Heaven horde mode with boons and three demon lords, a Gonggong boss raid, a Jade Emperor raid and a daily dungeon
+5. Campaigns: Journey to the West (7 chapters) and Investiture of the Gods (4 chapters), with ink-painted story panels
+6. New modes in a tabbed mode menu: Twin Rivers, Street Brawl, Arena of Ten Suns, Troop Wars, Quick Battle, festival modes, URF, Mirror Match, Ability Draft, Captains, Single and Least-played drafts, and Couch Co-op
+7. Custom Match Lab with stacking mutators, per-side difficulty and shareable preset codes
+8. Each battlefield has its own objective. The Heavenly Palace is new, and there are watch towers, peach groves, cloud gates, boss relics and optional weather, day/night and mounts
+9. Trials, with three mastery trials for every immortal, a weekly board and "Take control" from any moment of a replay
+10. Smarter bots: they answer and send pings, plan objectives with a countdown, last-hit and freeze waves, use items, spells and troops, and remember the match. Difficulty is now set per side, with a Sovereign tier, a labelled Unfair tier and optional adaptive difficulty
+11. A spirit-fox companion, "Why did I die?" explanations, a 3-minute lesson, first steps, a glossary and tips that fade as you learn
+12. Progression: a reward on every level to 50, a free season pass, a collection book, mastery 1–10 with titles, hero levels, relics, a lore codex, a festival calendar and the Hall of Records
+13. Replays: instant seeking, a timeline with key moments, gold/XP/win graphs, either team's view, bookmarks, codes and files. Post-match tabs show damage, healing, troops, gold sources and items
+14. HUD editor (desktop) and a button layout editor (phone), an eight-way ping wheel, chat and emote wheels, cooldowns in team frames, objective timers and shop build presets with pinning
+15. Controller support across the whole game, Steam Deck mode, and accessibility options: colour-blind battlefield, team shapes, text size, reduced flashing, sound cues, one-handed play, 75% speed and tactical pause
+16. Simplified Chinese: the whole game in 简体中文 (Settings › Gameplay › Language)
+17. Painted portraits and ability icons, ability previews in the gallery, hero voice lines with subtitles, adaptive music layers and announcer packs
+18. Android: automatic backups to Downloads, file import, and saved exports. Desktop: saves laid out for Steam Cloud
+19. Balance: heroes now use their real attack range, the first bosses are staggered, Duel and Bridge end sooner, Erlang Shen is trimmed, and the new immortals were tuned from simulated matches
+20. Replays from earlier versions are flagged as incompatible (simulation version 45)
+
+---
+
 # Heavenly Mandate — v0.049 changelog
 
 **The desktop review: tests, fairer bots, a clearer surrender and a sturdier desktop app.**
