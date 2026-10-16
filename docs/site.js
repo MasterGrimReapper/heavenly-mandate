@@ -1,5 +1,5 @@
-/* heavenlymandate.net: the shared script (the Play dialog, the menu, the hero filter, the gentle reveal).
-   Every page works without it; the Play button then goes to the #play section on the home page. */
+/* heavenlymandate.net: the shared script (the store badges, the menu, the hero filter, the gentle reveal).
+   Every page works without it: the download page and the home page carry a plain HTML copy of the store panel. */
 
 /* ====== STORE LINKS: fill in a value to put a store live. null = not available yet (shown as a disabled badge). ======
    googlePlay: 'https://play.google.com/store/apps/details?id=com.heavenlymandate.game'   (when the listing is public)
@@ -24,8 +24,7 @@ const STORE = {
     android: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 9h10v8a1.5 1.5 0 0 1-1.5 1.5H15V21a1 1 0 0 1-2 0v-2.5h-2V21a1 1 0 0 1-2 0v-2.5h-.5A1.5 1.5 0 0 1 7 17V9Zm-2.5 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1Zm15 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1ZM7.2 8a4.9 4.9 0 0 1 2.4-3.7l-.9-1.5a.4.4 0 1 1 .7-.4l.9 1.6a5.5 5.5 0 0 1 3.4 0l.9-1.6a.4.4 0 1 1 .7.4l-.9 1.5A4.9 4.9 0 0 1 16.8 8H7.2Zm2.8-2a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2Zm4 0a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2Z"/></svg>',
     desktop: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20.5h8M12 16.5v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
     down: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-    steam: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="15.5" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8.6" cy="15.4" r="1.9" fill="currentColor"/><path d="M8.6 15.4 13.6 10.6" stroke="currentColor" stroke-width="1.6"/></svg>',
-    close: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+    steam: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="15.5" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8.6" cy="15.4" r="1.9" fill="currentColor"/><path d="M8.6 15.4 13.6 10.6" stroke="currentColor" stroke-width="1.6"/></svg>'
   };
 
   /* a store badge: a link when its URL is set, a disabled placeholder when it is not */
@@ -34,7 +33,7 @@ const STORE = {
     return `<span class="badge" role="img" aria-disabled="true" aria-label="${offBig}: ${tag}">${icon}<span><small>${offSmall}</small><b>${offBig}</b></span><span class="tag">${tag}</span></span>`;
   }
 
-  /* the Play panel: used by the dialog and by every [data-store-panel] block (the #play section on the home page) */
+  /* the store panel: every [data-store-panel] block (the download page and the #play section on the home page) */
   function panelHTML() {
     const apk = STORE.apk ? `<a class="btn gold" href="${STORE.apk}" download>${ICON.down}Download the APK now</a>
       <p class="note">Android 8 or newer, about 32 MB. The app updates itself.</p>` : '';
@@ -65,43 +64,6 @@ const STORE = {
   }
 
   function fillPanels() { doc.querySelectorAll('[data-store-panel]').forEach(el => { el.innerHTML = panelHTML(); }); }
-
-  /* ---------- the Play dialog ---------- */
-  let dlg = null, opener = null;
-  function buildDialog() {
-    dlg = doc.createElement('dialog');
-    dlg.className = 'play-dlg'; dlg.id = 'play-dialog'; dlg.setAttribute('aria-labelledby', 'play-dlg-title'); dlg.setAttribute('aria-modal', 'true');
-    dlg.innerHTML = `<div class="dlg-head"><span class="seal sm" aria-hidden="true">玩</span><h2 id="play-dlg-title">Play Heavenly Mandate</h2>
-      <button class="dlg-x" type="button" aria-label="Close">${ICON.close}</button></div>
-      <div class="dlg-body">${panelHTML()}</div>`;
-    doc.body.appendChild(dlg);
-    dlg.querySelector('.dlg-x').addEventListener('click', closeDialog);
-    dlg.addEventListener('click', e => { if (e.target === dlg) closeDialog(); });   // a tap on the backdrop
-    dlg.addEventListener('cancel', e => { e.preventDefault(); closeDialog(); });    // Esc
-    dlg.addEventListener('keydown', trapFocus);
-  }
-  function focusables() { return [...dlg.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter(el => el.offsetParent !== null); }
-  function trapFocus(e) {
-    if (e.key === 'Escape') { e.preventDefault(); closeDialog(); return; }
-    if (e.key !== 'Tab') return;
-    const f = focusables(); if (!f.length) return;
-    const first = f[0], last = f[f.length - 1];
-    if (e.shiftKey && doc.activeElement === first) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && doc.activeElement === last) { e.preventDefault(); first.focus(); }
-  }
-  function openDialog(from) {
-    if (!dlg) buildDialog();
-    opener = from || doc.activeElement;
-    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
-    root.classList.add('modal-open');
-    const x = dlg.querySelector('.dlg-x'); if (x) x.focus();
-  }
-  function closeDialog() {
-    if (!dlg) return;
-    if (typeof dlg.close === 'function' && dlg.open) dlg.close(); else dlg.removeAttribute('open');
-    root.classList.remove('modal-open');
-    if (opener && opener.focus) opener.focus();
-  }
 
   /* ---------- the menu on small screens ---------- */
   function menu() {
@@ -138,11 +100,6 @@ const STORE = {
 
   function init() {
     fillPanels(); menu(); heroFilter(); reveal();
-    doc.addEventListener('click', e => {
-      const a = e.target.closest('[data-play]'); if (!a) return;
-      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
-      e.preventDefault(); openDialog(a);
-    });
   }
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', init); else init();
 })();
