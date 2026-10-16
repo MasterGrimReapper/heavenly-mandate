@@ -445,3 +445,7 @@ a.badge:hover { border-color: var(--gold); color: #fff; }
 .dc-card .dc-copy h2 { margin: 0 0 6px; }
 .dc-card .dc-copy p { margin: 0; color: var(--paper-2); }
 @media (max-width: 640px) { .dc-card { flex-direction: column; align-items: stretch; text-align: center; } .dc-card .seal { margin: 0 auto; } }
+.btn.dc svg { color: var(--gold); }
+.btn.dc:hover svg { color: var(--gold-hi); }
+@media (max-width: 600px) { .hero-copy .btns { flex-direction: column; align-items: stretch; width: 100%; max-width: 360px; margin: 0 auto; } }
+.nw { white-space: nowrap; }
