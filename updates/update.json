@@ -1,11 +1,22 @@
 {
- "versionCode": 54,
- "versionName": "0.5.4",
- "title": "Smooth movement online",
+ "versionCode": 55,
+ "versionName": "0.5.5",
+ "title": "Play with friends, in your language, with a master to teach you",
  "notes": [
-  "Online, immortals steered with the thumb stick or a gamepad no longer move in stop-and-go steps"
+  "Friends",
+  "Parties",
+  "Chat",
+  "Online formats",
+  "Smoother movement online",
+  "Tips show once each, one at a time, and never while an enemy immortal is hitting you",
+  "Attack button",
+  "Bahasa Indonesia",
+  "First-run lesson",
+  "Offline play is focused on six modes",
+  "Attack lock-on is safe near towers",
+  "Phones and tablets"
  ],
  "apk": "https://raw.githubusercontent.com/MasterGrimReapper/heavenly-mandate/main/android/HeavenlyMandate-Android.apk",
- "size": 30828919,
- "sha256": "d6bfd419ec44d44b506806bae129a46c1f466da5b3bfd7997c2f8847ff752bbd"
+ "size": 32537782,
+ "sha256": "867645f63dc4afb871fdd0e4c361fd33c691ca9f238db09819c26ba294e5d1e7"
 }

@@ -1,3 +1,22 @@
+# Heavenly Mandate — v0.055 changelog
+
+**Play with friends, in your language, with a master to teach you.**
+
+1. Friends: add a friend by their name (Name#1234 at the top of the Friends panel). Friends see each other online, in a party or in a match. Up to 100 friends
+2. Parties: invite online friends into a party of up to 5. The leader picks a queue and a format and the whole party searches together, always on the same team. The party stays together after the match
+3. Chat: team, all and party chat with four quick phrases. Messages are filtered for bad words, limited to one a second and never saved in replays. Hold (phones) or click (computers) a name to mute that player
+4. Online formats: Ranked, Quick Match, Bridge of Immortals and Duels each ask for a format: 5v5, 3v3, 2v2 or 1v1. Ranked and Quick Match 5v5 play on Three Realms, 3v3 and 2v2 on Twin Rivers, 1v1 on the duel bridge. Team duels end at 10 (5v5), 7 (3v3) or 5 (2v2) takedowns or the first pagoda
+5. Smoother movement online: your own immortal is drawn where it is going, the moment you move the stick, instead of after the input delay. The match itself is unchanged; Settings › Online › Predict my movement turns it off
+6. Tips show once each, one at a time, and never while an enemy immortal is hitting you. The first tip has a Turn off button (Settings › Gameplay › Tips)
+7. Attack button: it now reaches much farther and locks on. It prefers an enemy immortal within reach, otherwise the nearest soldier, monster or structure, and your immortal walks into range. An enemy immortal coming close takes over from a soldier; a second tap switches immortals; the target frame at the top shows who you are attacking (tap it to let go)
+8. Bahasa Indonesia: the whole game in Indonesian. On first start the game picks your phone's language and lets you choose English, 简体中文 or Bahasa Indonesia; change it any time in Settings › Gameplay › Language. Only your language's text is loaded
+9. First-run lesson: an old master teaches the basics in a voiced, playable lesson of about three minutes (English and Mandarin voices), then walks you through the menu and Settings, then gives five beginner quests with rewards. Skip it with "I know MOBAs"; replay it from Settings › Gameplay
+10. Offline play is focused on six modes: Three Realms, Bridge of Immortals, Duel of Immortals, King of the River, Siege of Heaven and the Practice Grounds. The other modes return in later updates
+11. Attack lock-on is safe near towers: it never walks you under an enemy pagoda alone (it stops at the edge and says "Enemy pagoda ahead") and never pulls you into a jungle camp from afar. The red ring under the locked target is now drawn
+12. Phones and tablets: every battle button has a touch area of at least 40 px (tip Turn off, top buttons, item slots, attack-soldiers and attack-pagoda, enemy portraits); the spirit fox's bubble keeps clear of chat, the target frame and tips; "Why did I die?" follows the Tips switch; map names show in full; the end screen scrolls clear of its buttons; the master's card is never covered by the controls guide; long menu labels wrap; no keyboard or mouse tips on the loading screen
+
+---
+
 # Heavenly Mandate — v0.054 changelog
 
 **Smooth movement online.**
