@@ -61,7 +61,7 @@ a:hover { color: #fff1c9; }
 @media (max-width: 900px) {
   .js .menu-btn { display: inline-grid; place-items: center; width: 42px; height: 42px; padding: 0; background: none; border: 1px solid var(--line-2); border-radius: 3px; color: var(--paper); cursor: pointer; }
   .menu-btn svg { width: 20px; height: 20px; }
-  .js .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 6px var(--gut) 14px; background: rgba(9, 16, 13, .97); border-bottom: 1px solid var(--line-2); }
+  .js .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 6px var(--gut) 14px; background: var(--ink); border-bottom: 1px solid var(--line-2); box-shadow: 0 24px 40px -10px rgba(0, 0, 0, .7); }
   .js .nav.open { display: flex; }
   .js .nav a { padding: 12px 4px; font-size: 18px; border-bottom: 1px solid var(--line); }
   .js .nav a[aria-current="page"]::after { display: none; }
@@ -123,6 +123,7 @@ main { display: block; }
 .sec-head { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 30px; max-width: 760px; }
 .sec-head h2 { margin: 2px 0 6px; font: 400 clamp(28px, 4.4vw, 40px)/1.12 var(--f-title); letter-spacing: .01em; color: var(--paper); }
 .sec-head p { margin: 0; color: var(--mute); font-size: 18px; max-width: 62ch; }
+h1, h2, h3 { text-wrap: balance; }
 h3 { font: 400 22px/1.25 var(--f-title); margin: 0 0 6px; color: var(--paper); }
 p { margin: 0 0 14px; }
 .lede { font-size: clamp(18px, 2.3vw, 21px); color: var(--paper-2); max-width: 60ch; }
@@ -135,9 +136,10 @@ p { margin: 0 0 14px; }
 .page-head .lede { position: relative; margin: 0; }
 
 /* ---------- home hero ---------- */
-.hero { position: relative; overflow: hidden; background: #1c2726; border-bottom: 1px solid var(--line); }
+.hero { position: relative; overflow: hidden; background: #1c2726; }
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 28%; background: linear-gradient(180deg, rgba(28, 39, 38, 0), #1c2726); pointer-events: none; }
 .hero picture, .hero .banner { display: block; width: 100%; }
-.hero .banner { aspect-ratio: 16 / 9; object-fit: cover; object-position: center 40%; max-height: min(78vh, 760px); width: 100%; }
+.hero .banner { aspect-ratio: 16 / 9; object-fit: cover; object-position: center 22%; max-height: min(64vh, 720px); width: 100%; }
 .hero .clouds { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .hero .clouds span { position: absolute; display: block; width: 240px; height: 88px; background: url(img/cloud.svg) center / contain no-repeat; opacity: .28; }
 .hero .clouds span:nth-child(1) { top: 4%; left: -10%; animation: drift 80s linear infinite; }
@@ -145,8 +147,8 @@ p { margin: 0 0 14px; }
 .hero .clouds span:nth-child(3) { top: 8%; left: 66%; width: 140px; opacity: .14; animation: drift 130s linear infinite; }
 @media (max-width: 600px) { .hero .clouds span { width: 120px !important; opacity: .16; } }
 @keyframes drift { from { transform: translateX(-12vw); } to { transform: translateX(28vw); } }
-.hero-copy { position: relative; padding: 34px 0 54px; background: linear-gradient(180deg, #1c2726 0%, var(--ink) 100%); }
-.hero-copy .wrap { display: grid; gap: 22px; justify-items: center; text-align: center; }
+.hero-copy { position: relative; padding: 26px 0 54px; background: linear-gradient(180deg, #1c2726 0%, var(--ink) 100%); }
+.hero-copy .wrap { display: grid; gap: 18px; justify-items: center; text-align: center; }
 .hero-copy h1 { margin: 0; font: 400 clamp(26px, 4.4vw, 44px)/1.15 var(--f-title); letter-spacing: .02em; max-width: 22ch; }
 .hero-copy .lede { margin: 0 auto; }
 .hero-copy .note { color: var(--mute); font-size: 15px; margin: 0; }
@@ -428,6 +430,6 @@ a.badge:hover { border-color: var(--gold); color: #fff; }
 .legal .doc-head .tabs { margin-bottom: 0; }
 .legal .sum p, .legal .card p { margin: 10px 0; }
 /* a lone last card in a three-column grid takes the whole row */
-@media (min-width: 700px) { .places > :last-child:nth-child(3n+1), .maps > :last-child:nth-child(3n+1) { grid-column: 1 / -1; } }
+@media (min-width: 700px) { .places:not(.four) > :last-child:nth-child(3n+1), .maps > :last-child:nth-child(3n+1) { grid-column: 1 / -1; } }
 .places.four { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 .modes.three { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
