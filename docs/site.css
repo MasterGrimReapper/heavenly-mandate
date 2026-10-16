@@ -424,3 +424,6 @@ dialog.play-dlg[open] { animation: rise .22s ease-out; }
   .sheet th { width: 40%; }
 }
 @media print { .top, .foot, .play-btn, dialog { display: none !important; } body { background: #fff; color: #000; } }
+.legal .doc-head { border-bottom: 1px solid var(--line-2); padding-bottom: 14px; margin-bottom: 12px; }
+.legal .doc-head .tabs { margin-bottom: 0; }
+.legal .sum p, .legal .card p { margin: 10px 0; }
