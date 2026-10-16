@@ -433,3 +433,15 @@ a.badge:hover { border-color: var(--gold); color: #fff; }
 @media (min-width: 700px) { .places:not(.four) > :last-child:nth-child(3n+1), .maps > :last-child:nth-child(3n+1) { grid-column: 1 / -1; } }
 .places.four { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 .modes.three { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+
+/* ---------- Discord links (hidden until tools/set_discord.py fills in the invite) ---------- */
+[data-discord][hidden] { display: none !important; }
+.dc-btn { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; padding: 0 12px; color: var(--paper); text-decoration: none; font: 700 15px/1 var(--f-ui); letter-spacing: .04em; border: 1px solid var(--line-2); border-radius: 3px; white-space: nowrap; }
+.dc-btn svg { width: 20px; height: 20px; color: var(--gold); }
+.dc-btn:hover { border-color: var(--gold); color: var(--gold-hi); }
+@media (max-width: 1100px) { .dc-btn { padding: 0; width: 42px; justify-content: center; } .dc-btn span { display: none; } }
+.dc-card { display: flex; align-items: center; gap: 22px; padding: 26px 28px; }
+.dc-card .dc-copy { flex: 1; min-width: 0; }
+.dc-card .dc-copy h2 { margin: 0 0 6px; }
+.dc-card .dc-copy p { margin: 0; color: var(--paper-2); }
+@media (max-width: 640px) { .dc-card { flex-direction: column; align-items: stretch; text-align: center; } .dc-card .seal { margin: 0 auto; } }
