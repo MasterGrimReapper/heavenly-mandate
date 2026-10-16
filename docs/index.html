@@ -3,62 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Heavenly Mandate · 天命 — a 5v5 MOBA of Chinese myth</title>
-<meta name="description" content="Heavenly Mandate (天命) is a 5v5 MOBA of Chinese myth and legend for Android: lead an immortal and their summoned troops online against real players, or offline against bots.">
-<meta property="og:title" content="Heavenly Mandate · 天命">
-<meta property="og:description" content="A 5v5 MOBA of Chinese myth and legend. Lead an immortal and their summoned troops.">
-<meta property="og:image" content="https://heavenlymandate.net/banner.jpg">
-<link rel="icon" href="icon.png">
+<title>Heavenly Mandate · 天命: a 5v5 MOBA of Chinese myth</title>
+<meta name="description" content="Heavenly Mandate (天命) is a free 5v5 MOBA of Chinese myth and legend for Android. Lead an immortal and their summoned troops online against real players, or offline against bots.">
+<meta name="author" content="Xianwuli">
+<meta name="theme-color" content="#09100d">
+<link rel="canonical" href="https://heavenlymandate.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Heavenly Mandate">
+<meta property="og:title" content="Heavenly Mandate · 天命: a 5v5 MOBA of Chinese myth">
+<meta property="og:description" content="Heavenly Mandate (天命) is a free 5v5 MOBA of Chinese myth and legend for Android. Lead an immortal and their summoned troops online against real players, or offline against bots.">
+<meta property="og:url" content="https://heavenlymandate.net/">
+<meta property="og:image" content="https://heavenlymandate.net/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Heavenly Mandate: a crimson and a jade dragon circling the title 天命">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Heavenly Mandate · 天命: a 5v5 MOBA of Chinese myth">
+<meta name="twitter:description" content="Heavenly Mandate (天命) is a free 5v5 MOBA of Chinese myth and legend for Android. Lead an immortal and their summoned troops online against real players, or offline against bots.">
+<meta name="twitter:image" content="https://heavenlymandate.net/img/og.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Marcellus&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=Ma+Shan+Zheng&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/site.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
-  <a class="brand" href="./"><img src="icon.png" alt=""><span>天命</span><b>Heavenly Mandate</b></a>
-  <nav><a href="#play">Play</a><a href="#game">The game</a><a href="support">Support</a><a href="privacy">Privacy</a></nav>
+  <a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="36" height="36"><span class="zh" lang="zh-CN">天命</span><b>Heavenly Mandate</b></a>
+  <nav class="nav" id="site-nav" aria-label="Main"><a href="/" aria-current="page">Home</a><a href="/heroes">Heroes</a><a href="/game">The Game</a><a href="/world">World</a><a href="/news">News</a><a href="/faq">FAQ</a></nav>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <a class="play-btn" href="#play" data-play aria-haspopup="dialog"><span class="zh" aria-hidden="true">玩</span>Play</a>
 </div></header>
-
-<section class="hero2">
-  <img class="banner" src="banner.jpg" alt="天命 · Heavenly Mandate: a crimson and a jade dragon circling the title" width="1600" height="900">
+<main id="main">
+<section class="hero" aria-label="Heavenly Mandate">
+  <picture><source type="image/webp" srcset="/img/banner-800.webp 800w, /img/banner.webp 1600w" sizes="100vw"><img class="banner" src="/img/banner-800.jpg" srcset="/img/banner-800.jpg 800w, /banner.jpg 1600w" sizes="100vw" width="1600" height="900" alt="天命 · Heavenly Mandate: a crimson dragon and a jade dragon circling the title" fetchpriority="high"></picture>
+  <div class="clouds" aria-hidden="true"><span></span><span></span><span></span></div>
+</section>
+<section class="hero-copy">
+  <span class="vert l" aria-hidden="true" lang="zh-CN">受命于天</span><span class="vert r" aria-hidden="true" lang="zh-CN">既寿永昌</span>
   <div class="wrap">
-    <h1 class="vh">Heavenly Mandate · 天命</h1>
-    <p class="lead">A 5v5 MOBA of Chinese myth and legend. Lead an immortal and their summoned troops against real players online, or against bots whenever there is no internet.</p>
-    <div class="cta" id="play">
-      <a class="btn primary" href="https://github.com/MasterGrimReapper/heavenly-mandate/raw/main/android/HeavenlyMandate-Android.apk">⬇ Download for Android <small>APK</small></a>
-      <span class="btn soon">Google Play <small>· coming soon</small></span>
-    </div>
+    <h1>A 5v5 MOBA of Chinese myth and legend</h1>
+    <p class="lede">Lead an immortal from Journey to the West, the Investiture of the Gods or the Three Kingdoms, and the troops they summon, in the war for the Mandate of Heaven. Play online against real players, or offline against bots.</p>
+    <div class="btns"><a class="btn gold" href="#play" data-play aria-haspopup="dialog">Play now <small>Android</small></a><a class="btn" href="/heroes">Meet the 15 immortals</a></div>
+    <p class="note">Free. No ads, no in-app purchases. English, 简体中文 and Bahasa Indonesia.</p>
   </div>
 </section>
 
-<section class="band" id="game"><div class="wrap">
-  <h2 class="sec">Every immortal leads an army</h2>
-  <p class="sub">Five against five across the Three Realms. Push the lanes, take the river bosses and the shrines, and shatter the enemy's Heart of Heaven.</p>
-  <div class="grid">
-    <div class="feat"><div class="g">兵</div><h3>Heroes with troops</h3><p>Sun Wukong calls Monkey Warriors, Hua Mulan brings Northern Riders, Zhu Bajie leads the Piglet Guard. Your troop follows you and fights at your command.</p></div>
-    <div class="feat"><div class="g">战</div><h3>Online and offline</h3><p>Ranked, Quick Match, Bridge of Immortals and Duels in 5v5, 3v3, 2v2 or 1v1 — or six offline modes against bots, any time.</p></div>
-    <div class="feat"><div class="g">友</div><h3>Friends and parties</h3><p>Add friends by name, form a party of up to five and search together, with team, all and party chat.</p></div>
-    <div class="feat"><div class="g">师</div><h3>Learn from the master</h3><p>A short hands-on lesson teaches the basics one step at a time, then beginner quests take it from there.</p></div>
-  </div>
-  <div class="langs" aria-label="Languages"><span>English</span><span lang="zh-CN">简体中文</span><span lang="id">Bahasa Indonesia</span></div>
-</div></section>
-
-<section class="band"><div class="wrap">
-  <h2 class="sec">From the battlefield</h2>
-  <p class="sub">Built for phones and tablets, with a touch layout that keeps the battlefield clear.</p>
-  <div class="shots">
-    <figure><img src="teamfight.jpg" alt="A teamfight in the Flaming Mountains" loading="lazy"><figcaption>A teamfight in the Flaming Mountains</figcaption></figure>
-    <figure><img src="phone-hud.jpg" alt="The battle screen on a phone" loading="lazy"><figcaption>The battle screen on a phone</figcaption></figure>
-    <figure><img src="bridge-battle.jpg" alt="The Bridge of Immortals over the sea of clouds" loading="lazy"><figcaption>The Bridge of Immortals</figcaption></figure>
-    <figure><img src="hero-detail.jpg" alt="An immortal's abilities and troop" loading="lazy"><figcaption>Every immortal's kit and troop</figcaption></figure>
-    <figure><img src="shop.jpg" alt="The Celestial Market" loading="lazy"><figcaption>The Celestial Market</figcaption></figure>
-    <figure><img src="modes.jpg" alt="Game modes" loading="lazy"><figcaption>Modes for every mood</figcaption></figure>
+<section class="sec" aria-labelledby="h-feat"><div class="wrap">
+  <div class="sec-head reveal"><span class="seal" aria-hidden="true">兵</span><div><h2 id="h-feat">Every immortal leads an army</h2><p>Five against five across the Three Realms. Push the lanes, take the river bosses and the shrines, and shatter the enemy Heart of Heaven.</p></div></div>
+  <div class="feats">
+    <div class="feat frame reveal"><span class="seal sm" aria-hidden="true">兵</span><h3>Heroes with troops</h3><p>Sun Wukong blows a tuft of hair into Monkey Warriors, Hua Mulan brings her Northern Riders, Zhu Bajie leads the Piglet Guard. Your troop fights beside you and charges at your command.</p></div>
+    <div class="feat frame reveal"><span class="seal sm" aria-hidden="true">战</span><h3>Online and offline</h3><p>Ranked, Quick Match, Bridge of Immortals and Duels in 5v5, 3v3, 2v2 or 1v1. No signal? Six offline modes against bots, any time.</p></div>
+    <div class="feat frame reveal"><span class="seal sm" aria-hidden="true">友</span><h3>Friends and parties</h3><p>Add friends by name, form a party of up to five and search together, with team, all and party chat.</p></div>
+    <div class="feat frame reveal"><span class="seal sm" aria-hidden="true">师</span><h3>Learn from the master</h3><p>A short hands-on lesson teaches the basics one step at a time. Beginner quests and the Practice Grounds take it from there.</p></div>
   </div>
 </div></section>
 
+<section class="sec tint" aria-labelledby="h-gal"><div class="wrap">
+  <div class="sec-head reveal"><span class="seal" aria-hidden="true">战</span><div><h2 id="h-gal">From the battlefield</h2><p>Built for phones and tablets, with a touch layout that keeps the fight in view.</p></div></div>
+  <div class="gallery"><figure class="wide reveal"><div class="plate frame"><picture><source type="image/webp" srcset="/img/teamfight-800.webp 800w, /img/teamfight.webp 1280w" sizes="(max-width: 760px) 100vw, 66vw"><img src="/img/teamfight-800.jpg" srcset="/img/teamfight-800.jpg 800w, /teamfight.jpg 1280w" sizes="(max-width: 760px) 100vw, 66vw" width="1280" height="720" alt="A teamfight in the Flaming Mountains" loading="lazy" decoding="async"></picture></div><figcaption>A teamfight in the Flaming Mountains</figcaption></figure><figure class=" reveal"><div class="plate frame"><picture><source type="image/webp" srcset="/img/phone-hud-800.webp 800w, /img/phone-hud.webp 915w" sizes="(max-width: 760px) 50vw, 33vw"><img src="/img/phone-hud-800.jpg" srcset="/img/phone-hud-800.jpg 800w, /phone-hud.jpg 915w" sizes="(max-width: 760px) 50vw, 33vw" width="915" height="412" alt="The battle screen on a phone" loading="lazy" decoding="async"></picture></div><figcaption>The battle screen on a phone</figcaption></figure><figure class=" reveal"><div class="plate frame"><picture><source type="image/webp" srcset="/img/bridge-battle-800.webp 800w, /img/bridge-battle.webp 1280w" sizes="(max-width: 760px) 50vw, 33vw"><img src="/img/bridge-battle-800.jpg" srcset="/img/bridge-battle-800.jpg 800w, /bridge-battle.jpg 1280w" sizes="(max-width: 760px) 50vw, 33vw" width="1280" height="720" alt="The Bridge of Immortals over the sea of clouds" loading="lazy" decoding="async"></picture></div><figcaption>The Bridge of Immortals over the sea of clouds</figcaption></figure><figure class=" reveal"><div class="plate frame"><picture><source type="image/webp" srcset="/img/hero-detail-800.webp 800w, /img/hero-detail.webp 1280w" sizes="(max-width: 760px) 50vw, 33vw"><img src="/img/hero-detail-800.jpg" srcset="/img/hero-detail-800.jpg 800w, /hero-detail.jpg 1280w" sizes="(max-width: 760px) 50vw, 33vw" width="1280" height="720" alt="Every immortal with their kit and troop" loading="lazy" decoding="async"></picture></div><figcaption>Every immortal with their kit and troop</figcaption></figure><figure class=" reveal"><div class="plate frame"><picture><source type="image/webp" srcset="/img/shop-800.webp 800w, /img/shop.webp 1280w" sizes="(max-width: 760px) 50vw, 33vw"><img src="/img/shop-800.jpg" srcset="/img/shop-800.jpg 800w, /shop.jpg 1280w" sizes="(max-width: 760px) 50vw, 33vw" width="1280" height="720" alt="The Celestial Market" loading="lazy" decoding="async"></picture></div><figcaption>The Celestial Market</figcaption></figure><figure class=" reveal"><div class="plate frame"><picture><source type="image/webp" srcset="/img/mode-maps-800.webp 800w, /img/mode-maps.webp 1300w" sizes="(max-width: 760px) 50vw, 33vw"><img src="/img/mode-maps-800.jpg" srcset="/img/mode-maps-800.jpg 800w, /mode-maps.jpg 1300w" sizes="(max-width: 760px) 50vw, 33vw" width="1300" height="640" alt="Battlefields seen from above" loading="lazy" decoding="async"></picture></div><figcaption>Battlefields seen from above</figcaption></figure></div>
+</div></section>
+
+<section class="sec" aria-labelledby="h-imm"><div class="wrap">
+  <div class="sec-head reveal"><span class="seal" aria-hidden="true">仙</span><div><h2 id="h-imm">The immortals</h2><p>Fifteen gods, generals, demons and heroes, each with four abilities, a passive and a troop of their own.</p></div></div>
+  <div class="strip reveal"><a href="/heroes#wukong"><img src="/img/heroes/wukong.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Sun Wukong</span><small>Fighter</small></a><a href="/heroes#erlang"><img src="/img/heroes/erlang.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Erlang Shen</span><small>Fighter</small></a><a href="/heroes#guanyu"><img src="/img/heroes/guanyu.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Guan Yu</span><small>Tank</small></a><a href="/heroes#zhubajie"><img src="/img/heroes/zhubajie.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Zhu Bajie</span><small>Tank</small></a><a href="/heroes#aoguang"><img src="/img/heroes/aoguang.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Ao Guang</span><small>Tank</small></a><a href="/heroes#niumowang"><img src="/img/heroes/niumowang.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Bull Demon King</span><small>Tank</small></a><a href="/heroes#nezha"><img src="/img/heroes/nezha.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Nezha</span><small>Assassin</small></a><a href="/heroes#baigujing"><img src="/img/heroes/baigujing.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Bai Gujing</span><small>Assassin</small></a><a href="/heroes#change"><img src="/img/heroes/change.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Chang&#x27;e</span><small>Mage</small></a><a href="/heroes#zhuge"><img src="/img/heroes/zhuge.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Zhuge Liang</span><small>Mage</small></a><a href="/heroes#baisuzhen"><img src="/img/heroes/baisuzhen.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Bai Suzhen</span><small>Mage</small></a><a href="/heroes#houyi"><img src="/img/heroes/houyi.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Hou Yi</span><small>Marksman</small></a><a href="/heroes#mulan"><img src="/img/heroes/mulan.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Hua Mulan</span><small>Marksman</small></a><a href="/heroes#mazu"><img src="/img/heroes/mazu.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Mazu</span><small>Support</small></a><a href="/heroes#jiangziya"><img src="/img/heroes/jiangziya.webp" alt="" width="256" height="256" loading="lazy" decoding="async"><span>Jiang Ziya</span><small>Support</small></a></div>
+  <p style="margin-top:22px"><a class="btn" href="/heroes">See every immortal</a></p>
+</div></section>
+
+<section class="sec tint" id="play" aria-labelledby="h-play"><div class="wrap">
+  <div class="sec-head reveal"><span class="seal" aria-hidden="true">玩</span><div><h2 id="h-play">Play Heavenly Mandate</h2><p>Early access on Android now. Google Play and a Windows version on Steam are on the way.</p></div></div>
+  <div data-store-panel><div class="store-panel">
+  <section class="store-group"><h3>Mobile</h3><div class="store-cols">
+    <div class="store-card frame"><h4>Android</h4>
+      <span class="badge" aria-disabled="true"><span><small>Soon on</small><b>Google Play</b></span><span class="tag">Coming soon</span></span>
+      <a class="btn gold" href="https://github.com/MasterGrimReapper/heavenly-mandate/raw/main/android/HeavenlyMandate-Android.apk" download>Download the APK now</a>
+      <p class="note">Android 8 or newer, about 32 MB. The app updates itself.</p></div>
+    <div class="store-card frame"><h4>iOS</h4>
+      <span class="badge" aria-disabled="true"><span><small>Later on the</small><b>App Store</b></span><span class="tag">Planned</span></span>
+      <p class="note">An iPhone and iPad version is planned for later. Android comes first.</p></div>
+  </div></section>
+  <section class="store-group"><h3>Desktop <small>Windows · <span class="wip">Work in progress</span></small></h3>
+    <div class="store-card frame"><span class="badge" aria-disabled="true"><span><small>Coming to</small><b>Steam</b></span><span class="tag">Wishlist soon</span></span>
+      <p class="note">A Windows version for Steam is in the works. The wishlist opens as soon as the store page is up.</p></div>
+  </section>
+</div></div>
+</div></section>
+
+<section class="sec" aria-labelledby="h-news"><div class="wrap">
+  <div class="sec-head reveal"><span class="seal" aria-hidden="true">报</span><div><h2 id="h-news">Latest news</h2><p>What changed in the most recent updates.</p></div></div>
+  <!-- LATEST:START -->
+  <!-- LATEST:END -->
+</div></section>
+<hr class="rule">
+</main>
 <footer class="foot"><div class="wrap">
-  <span class="sp">© 2026 Xianwuli · Heavenly Mandate</span>
-  <a href="privacy">Privacy policy</a><a href="delete-account">Delete your account</a><a href="support">Support</a>
+  <div class="cols">
+    <div>
+      <div class="brandline"><span class="zh" lang="zh-CN">天命</span><b>Heavenly Mandate</b></div>
+      <p>A 5v5 MOBA of Chinese myth and legend. Free on Android, with no ads and no in-app purchases. Coming to Google Play and Steam.</p>
+    </div>
+    <div><h2>The game</h2><ul><li><a href="/heroes">Heroes</a></li><li><a href="/game">The Game</a></li><li><a href="/world">World and lore</a></li><li><a href="/news">News</a></li></ul></div>
+    <div><h2>Help</h2><ul><li><a href="/faq">FAQ</a></li><li><a href="/support">Support</a></li><li><a href="/delete-account">Delete your account</a></li></ul></div>
+    <div><h2>About</h2><ul><li><a href="/press">Press kit</a></li><li><a href="/terms">Terms of use</a></li><li><a href="/privacy">Privacy policy</a></li></ul></div>
+  </div>
+  <div class="base"><span>© 2026 Xianwuli · Heavenly Mandate</span><a href="mailto:heavenlymandatesupport@gmail.com">heavenlymandatesupport@gmail.com</a></div>
 </div></footer>
 </body>
 </html>
