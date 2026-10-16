@@ -2,7 +2,7 @@
 
 <h1 align="center">Heavenly Mandate · 天命</h1>
 
-<p align="center"><b>A 5v5 online MOBA of Chinese myth and legend.</b><br>
+<p align="center"><b>A 5v5 online MOBA Game of Chinese Mythology and Legends.</b><br>
 Lead an immortal and their summoned troops into ranked matchmaking against real players, or play offline against bots whenever there is no internet.</p>
 
 <p align="center">
