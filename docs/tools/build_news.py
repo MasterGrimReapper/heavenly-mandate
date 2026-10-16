@@ -106,7 +106,10 @@ def main():
     vs = parse(open(CHANGELOG, encoding='utf-8').read())
     if not vs:
         sys.exit('no versions found in ' + CHANGELOG)
-    vs.sort(key=lambda v: [int(p) for p in v['ver'].split('.') if p.isdigit()], reverse=True)
+    def vnum(v):   # old style 0.056 = minor 56; new style 0.5.07 = 5*1000+7 (0.5.07 is newer than 0.056)
+        p = [int(x) for x in v.split('.') if x.isdigit()]
+        return p[0] * 10**6 + p[1] * 1000 + p[2] if len(p) >= 3 else p[0] * 10**6 + (p[1] if len(p) > 1 else 0)
+    vs.sort(key=lambda v: vnum(v['ver']), reverse=True)
     top = vs[:COUNT]
     news = '<div class="news-list">\n' + '\n'.join(item_html(v, i == 0) for i, v in enumerate(top)) + '\n</div>\n'
     news += '<p class="muted" style="margin-top:24px">Older versions are listed in the full changelog in the game\'s repository.</p>'
