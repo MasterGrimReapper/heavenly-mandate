@@ -1,3 +1,30 @@
+# Heavenly Mandate — v0.5.07 changelog
+
+**Smoother online play, a game that runs on more phones, and clearer matches from the first tap to the end screen.**
+
+1. Less lag online: the input delay is now sized from your measured ping and how steady it is, instead of a fixed safety margin, and after a lag spike it comes back down within about 12 seconds instead of a minute. In tests the time from pressing a button to seeing it happen dropped by 100–250 ms (two players in the US: 0.31 s → 0.21 s)
+2. Smoother online movement: the game plays turns at a steady pace, speeding up or slowing down a little instead of stopping and jumping when the connection stutters; every unit glides between steps; your attack and ability presses show at once (your immortal turns and the button flashes) while the real move lands after the delay
+3. Settings › Online › Show network stats: delay, ping, jitter, late turns and catch-ups on screen
+4. New Performance graphics preset for older phones: lower resolution, no shadows, fewer particles, simpler units and 30 fps. Phones with 2 GB of memory start on it. Stay cool automatically now steps down to it when frames drop and back up after about 30 seconds of smooth play
+5. Every graphics preset draws much less: soldiers, troops, monsters and projectiles are drawn in batches and each immortal in a few pieces, about 60% fewer draw calls in a big teamfight (Low: 906 → 323). Low adds soft shadows under units
+6. Quick match on the main menu: one tap starts Three Realms against easy bots with your last immortal
+7. Every mode card says Beginner, Standard or Advanced next to its length
+8. Your first real match after the lesson gives four short hints at the right moments: lanes, last hits, pagodas and the river boss
+9. "?" buttons explain last hits, lanes, objectives, ability haste, ranked placement, bots and the grade
+10. Greyed-out buttons say why when you tap them, for example "Need 650 more gold" or that a lane is full
+11. End of match: a grade from S to C for your role, the coach's strongest area, one thing to improve and a mode to practise it in, and a timeline that marks the turning point ("takedowns 8–1, objectives 12–0"). The grade and the coach always agree
+12. Ranked: the rating change is explained in words, with your placement progress
+13. Bot fill is spelled out before you queue, in the draft and on the end screen: bots take empty seats after 1 minute, only when at least 2 real players are in the match, and ranked points count only the real players
+14. The target frame is a small chip at the top right instead of a box in the middle of the screen; tap ✕ to let go. Settings › HUD › Target frame: Small or Off
+15. A safer start: if loading stalls or a game file fails, the game says what happened and offers Retry instead of a blank screen, and it recovers when the phone resets its graphics
+16. Safer saves: a damaged or unreadable save is restored from a backup, with a message; match rewards are never paid twice
+17. Settings › Help and diagnostics: Copy diagnostics and Email to support, with recent errors, so problems can be fixed faster. Nothing is sent unless you choose to
+18. The privacy policy is in the game (Settings › Gameplay › About) and on heavenlymandate.net
+19. The game server can host about 4–5 times as many matches at once
+20. Versions are now numbered 0.5.07, 0.5.08 and so on
+
+---
+
 # Heavenly Mandate — v0.056 changelog
 
 **A quieter, hands-on first lesson, friends on the main menu, and a server closer to most players.**

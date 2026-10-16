@@ -1,16 +1,22 @@
 {
- "versionCode": 56,
- "versionName": "0.5.6",
- "title": "A quieter, hands-on first lesson, friends on the main menu, and a server closer to most players",
+ "versionCode": 507,
+ "versionName": "0.5.07",
+ "title": "Smoother online play, a game that runs on more phones, and clearer matches from the first tap to the end screen",
  "notes": [
-  "The first lesson is guided one action at a time",
-  "The master no longer speaks: his words are on the card, and the lesson's 78 voice clips are gone (the app is 0.8 MB smaller)",
-  "In the lesson your own pagodas hold their fire and you cannot die, so nothing interrupts a step",
-  "The menu tour is 6 stops instead of 22: Play, Heroes, Shop, Profile, Quests and Settings",
-  "Friends and party on the main menu",
-  "The game server moved from Oregon to Ohio, closer to most of our players. Accounts, ranks and friends moved with it"
+  "Less lag online",
+  "Smoother online movement",
+  "Settings › Online › Show network stats: delay, ping, jitter, late turns and catch-ups on screen",
+  "New Performance graphics preset for older phones",
+  "Every graphics preset draws much less",
+  "Quick match on the main menu: one tap starts Three Realms against easy bots with your last immortal",
+  "Every mode card says Beginner, Standard or Advanced next to its length",
+  "Your first real match after the lesson gives four short hints at the right moments: lanes, last hits, pagodas and the river boss",
+  "\"?\" buttons explain last hits, lanes, objectives, ability haste, ranked placement, bots and the grade",
+  "Greyed-out buttons say why when you tap them, for example \"Need 650 more gold\" or that a lane is full",
+  "End of match",
+  "Ranked: the rating change is explained in words, with your placement progress"
  ],
  "apk": "https://raw.githubusercontent.com/MasterGrimReapper/heavenly-mandate/main/android/HeavenlyMandate-Android.apk",
- "size": 31739922,
- "sha256": "342e90ccca0676e357b4719acd48213f71397ccd64c394b0b7dc94431e97fd0c"
+ "size": 31945668,
+ "sha256": "88cd317568852e0e1a43fa5633d78adcc5e0d38ec1bb5758a2d14b2aecbba348"
 }
