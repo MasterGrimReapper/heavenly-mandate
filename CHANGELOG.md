@@ -1,3 +1,16 @@
+# Heavenly Mandate — v0.056 changelog
+
+**A quieter, hands-on first lesson, friends on the main menu, and a server closer to most players.**
+
+1. The first lesson is guided one action at a time: the screen dims except the button to press, a drawn finger shows the tap or the drag, and an arrow points to every target in the world. Each step says one short thing, never moves on before you have done it, and shows a check mark when you have. 18 steps on phones and tablets
+2. The master no longer speaks: his words are on the card, and the lesson's 78 voice clips are gone (the app is 0.8 MB smaller)
+3. In the lesson your own pagodas hold their fire and you cannot die, so nothing interrupts a step
+4. The menu tour is 6 stops instead of 22: Play, Heroes, Shop, Profile, Quests and Settings
+5. Friends and party on the main menu: a card on tablets and a 友 tab on the right edge of phones that slides out a drawer. See who is online, accept requests and invites, invite friends into your party and press Play together, without opening Online. Settings › Online › Show friends on the main menu turns it off
+6. The game server moved from Oregon to Ohio, closer to most of our players. Accounts, ranks and friends moved with it
+
+---
+
 # Heavenly Mandate — v0.055 changelog
 
 **Play with friends, in your language, with a master to teach you.**

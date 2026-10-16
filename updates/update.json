@@ -1,22 +1,16 @@
 {
- "versionCode": 55,
- "versionName": "0.5.5",
- "title": "Play with friends, in your language, with a master to teach you",
+ "versionCode": 56,
+ "versionName": "0.5.6",
+ "title": "A quieter, hands-on first lesson, friends on the main menu, and a server closer to most players",
  "notes": [
-  "Friends",
-  "Parties",
-  "Chat",
-  "Online formats",
-  "Smoother movement online",
-  "Tips show once each, one at a time, and never while an enemy immortal is hitting you",
-  "Attack button",
-  "Bahasa Indonesia",
-  "First-run lesson",
-  "Offline play is focused on six modes",
-  "Attack lock-on is safe near towers",
-  "Phones and tablets"
+  "The first lesson is guided one action at a time",
+  "The master no longer speaks: his words are on the card, and the lesson's 78 voice clips are gone (the app is 0.8 MB smaller)",
+  "In the lesson your own pagodas hold their fire and you cannot die, so nothing interrupts a step",
+  "The menu tour is 6 stops instead of 22: Play, Heroes, Shop, Profile, Quests and Settings",
+  "Friends and party on the main menu",
+  "The game server moved from Oregon to Ohio, closer to most of our players. Accounts, ranks and friends moved with it"
  ],
  "apk": "https://raw.githubusercontent.com/MasterGrimReapper/heavenly-mandate/main/android/HeavenlyMandate-Android.apk",
- "size": 32537782,
- "sha256": "867645f63dc4afb871fdd0e4c361fd33c691ca9f238db09819c26ba294e5d1e7"
+ "size": 31739922,
+ "sha256": "342e90ccca0676e357b4719acd48213f71397ccd64c394b0b7dc94431e97fd0c"
 }
