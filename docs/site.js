@@ -43,8 +43,8 @@ const STORE = {
     <div class="store-cols">
       <div class="store-card frame">
         <h4>${ICON.android}Android</h4>
-        ${badge(STORE.googlePlay, ICON.play, 'Get it on', 'Google Play', 'Soon on', 'Google Play', 'Coming soon')}
         ${apk}
+        ${badge(STORE.googlePlay, ICON.play, 'Get it on', 'Google Play', 'Soon on', 'Google Play', 'Coming soon')}
       </div>
       <div class="store-card frame">
         <h4>${ICON.phone}iOS</h4>
