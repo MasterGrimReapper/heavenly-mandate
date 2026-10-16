@@ -81,6 +81,9 @@ def item_html(v, latest=False, level='h2'):
     iso, human = release_date(v['ver'])
     bullets = [short(x) for x in v['items'][:BULLETS]]
     more = len(v['items']) - len(bullets)
+    if len(v['items']) < 3:   # a short release: show the sentences of its items instead
+        sents = [x for it in v['items'] for x in re.split(r'(?<=[A-Za-z0-9)%])\.\s+(?=[A-Z])', clean(it))]
+        bullets = [clip(x.rstrip('.')) for x in sents[:3] if x.strip()]
     lis = ''.join(f'<li>{e(b)}</li>' for b in bullets if b)
     if more > 0:
         lis += f'<li class="muted">And {more} more change{"s" if more > 1 else ""}.</li>'
