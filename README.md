@@ -171,4 +171,4 @@ Heavenly Mandate is in **early access** and updated often. See the [changelog](C
 
 ---
 
-<p align="center"><sub>Heavenly Mandate © MasterGrimReapper. All rights reserved. Characters are drawn from Chinese mythology, folklore and classic literature.</sub></p>
+<p align="center"><sub>Heavenly Mandate © Xianwuli. All rights reserved. Characters are drawn from Chinese mythology, folklore and classic literature.</sub></p>
