@@ -333,7 +333,7 @@ a.badge:hover { border-color: var(--gold); color: #fff; }
 .places { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 .place { padding: 20px; }
 .place .hd { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; }
-.place .hd .g { font: 400 30px/1 var(--f-zh); color: var(--gold); }
+.place .hd .g { font: 400 30px/1 var(--f-zh); color: var(--gold); white-space: nowrap; flex: none; }
 .place .hd small { display: block; color: var(--mute); font-size: 14px; }
 .place p { color: var(--paper-2); font-size: 16px; }
 .place .src, .src { font-size: 13.5px; color: var(--mute); margin: 0; }
